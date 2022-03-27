@@ -1,1 +1,1 @@
-# Challenge_2_-Loan_Qualitfer_Application
+# Challenge_2_-Loan_Qualifer_Application
