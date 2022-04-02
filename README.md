@@ -132,7 +132,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
  ```  
 
- D- Finally the application gives the user a choice to save the list of qualifying loans in the `data` directory as the `qualifying_loans.csv` file:
+ D- Finally the application gives the user a choice to save the list of qualifying loans if any in the `data` directory as the `qualifying_loans.csv` file:
 
 
 ```python
