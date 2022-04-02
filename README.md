@@ -41,7 +41,7 @@ N/A
 ## Usage
 
 
-A- First the user needs to import the list of Bank loans (located in the "data" directory) being offered to the loan applicants into python:
+A- First the user needs to import the list of Bank loans (Directory location: data/daily_rate_sheet.csv) being offered to the loan applicants into python:
 
 ```python
 def load_bank_data():
