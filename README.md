@@ -87,7 +87,7 @@ def get_applicant_info():
     return credit_score, debt, income, loan_amount, home_value
 ```
 
-C- Afterwards a filtering Algorithm will run to get a list of Bank loans that the loan applicants are qualified for based on the banks requirements compared against their financial informtion:
+C- Afterwards a filtering Algorithm will run to get a list of Bank loans that the loan applicants are qualified for based on the banks requirements compared against the applicant's financial informtion:
 
 ```python
 
