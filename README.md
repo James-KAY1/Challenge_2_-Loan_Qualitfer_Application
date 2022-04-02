@@ -40,9 +40,8 @@ N/A
 ---
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
 
-A- This is a command line application that assist users with matching loan applicants with qualifying loans. This application was created to sreamline the loan qualifying process for user by importing the list of Bank loans (located in the "data" directory) being offered to loan applicants into python:
+A- First the user needs to import the list of Bank loans (located in the "data" directory) being offered to the loan applicants into python:
 
 ```python
 def load_bank_data():
@@ -62,7 +61,7 @@ def load_bank_data():
 
 
 
-B- Users will be prompted to input the applicants financial information:
+B- Users will be prompted to input the applicant's financial information:
 
 ```python
 
@@ -88,7 +87,7 @@ def get_applicant_info():
     return credit_score, debt, income, loan_amount, home_value
 ```
 
-C- Afterwards using a filtering Algorithm to get a list of Bank loans that the loan applicants are qualified for based on their financial informtion and the banks requirements:
+C- Afterwards a filtering Algorithm will run to get a list of Bank loans that the loan applicants are qualified for based on the banks requirements compared against their financial informtion:
 
 ```python
 
@@ -133,7 +132,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
  ```  
 
- D- Finally the application give the user a choice to save the list of qualifying loans in the "data" directory as the qualifying_loans.csv file:
+ D- Finally the application gives the user a choice to save the list of qualifying loans in the "data" directory as the qualifying_loans.csv file:
 
 
 ```python
@@ -156,12 +155,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 
 
-
-
-
- Please note, the folders below and their usage:
-
-
+**Please note, the folders below and their usage:**
 
  > "data" Folder:
    
@@ -169,9 +163,9 @@ Contains the Bank loan list - "daily_rate_sheet.csv" and this is where the new q
 
 >"qualifer" Folder:
 
-filters - sub folder where the filtering functions are saved for usage in the main app.py file.
+filters - sub folder where the filtering functions (filters for bank loans) are saved for usage in the main app.py file.
 
-utils - sub folders where the financial/loan functions are saved for usage in the main app.py file.
+utils - sub folders where the utility functions and financial functions (debt ratio, loan to value ratio etc) are saved for usage in the main app.py file.
 
 
 
