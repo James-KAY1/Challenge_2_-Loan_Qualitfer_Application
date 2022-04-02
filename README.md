@@ -159,7 +159,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
  > `data` Folder:
    
-Contains the Bank loan list - `daily_rate_sheet.csv` and this is where the new qualifying loans csv file will be saved.
+Contains the Bank loan list - `daily_rate_sheet.csv` and where the new `qualifying_loans.csv` file will be saved.
 
 >`qualifer` Folder:
 
