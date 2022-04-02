@@ -116,7 +116,7 @@ def save_qualifying_loans(qualifying_loans):
 
     save_qualifying_loans = questionary.confirm("Do you want to save you qualifying loan list?").ask()
     if save_qualifying_loans:
-        csvpath = questionary.text("Enter a file path to qualifiying_loans.csv:").ask()
+        csvpath = questionary.text("Save file by typing this Path: data/qualifying_loans.csv").ask()
         header = ["Lender", "max loan", "max LTV", "Max DTI", "Min Credit", "Interest Rate"]
         save_csv(Path(csvpath), qualifying_loans, header=header)
     

@@ -1,0 +1,26 @@
+    1  cd FinTech-Workspace/
+    2  cd Challenges/Challenge_2/Starter_Code/Starter_Code/
+    3  ls
+    4  cd loan_qualifier_app/
+    5  ls
+    6  cd ..
+    7  cd..
+    8  cd ..
+    9  cd ..
+   10  cd Challenge_2_Loan_Qualifer_Application/Starter_Code/Starter_Code/loan_qualifier_app/
+   11  ls
+   12  python app.py
+   13  conda activate dev
+   14  python app.py
+   15  git status
+   16  git add .
+   17  git commit -m "updated app.py, calculation and utility files"
+   18  git status
+   19  git add A
+   20  git add .A
+   21  cd ../..
+   22  cd ..
+   23  git add *
+   24  git commit -m " updated app.py, calc , utility and Readme files"
+   25  git push
+   26  history 50 > terminal_history.txct
