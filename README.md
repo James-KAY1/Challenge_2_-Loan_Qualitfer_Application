@@ -157,15 +157,15 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 **Please note, the folders below and their usage:**
 
- > "data" Folder:
+ > `data` Folder:
    
 Contains the Bank loan list - "daily_rate_sheet.csv" and this is where the new qualifying loans csv file will be saved.
 
->"qualifer" Folder:
+>`qualifer` Folder:
 
-filters - sub folder where the filtering functions (filters for bank loans) are saved for usage in the main app.py file.
+`filters` - sub folder where the filtering functions (filters for bank loans) are saved for usage in the main app.py file.
 
-utils - sub folders where the utility functions and financial functions (debt ratio, loan to value ratio etc) are saved for usage in the main app.py file.
+`utils` - sub folders where the utility functions and financial functions (debt ratio, loan to value ratio etc) are saved for usage in the main app.py file.
 
 
 
