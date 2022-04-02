@@ -1,6 +1,6 @@
 # Loan Qualifier Application
 
-This is a command line application that assist users with matching loan applicants with qualifying bank loans. This application was created to sreamline the loan qualifying process for user and to save the qualifying loans so that that the results can be shared in a spreadsheet to other users.
+This is a command line application that assist users with matching loan applicants with qualifying bank loans. This application was created to streamline the loan qualifying process for user and to save the qualifying loans so that that the results can be shared in a spreadsheet to other users.
 
 ---
 
@@ -17,7 +17,7 @@ The applicable libraries needed to run this application are:
 
 All of the above librabries should be part of the base librabries installed with the version of Python above; if not, you will have to install them through the pip package manager which is the package manager of Python.
 
->Required pip stall librabries (versions):
+>Required pip install librabries (versions):
 
 ![<PiP>](./Images/Required%20pip%20install%20Libraries.png)
 
@@ -44,9 +44,7 @@ This section should include screenshots, code blocks, or animations explaining h
 
 A- This is a command line application that assist users with matching loan applicants with qualifying loans. This application was created to sreamline the loan qualifying process for user by importing the list of Bank loans (located in the "data" directory) being offered to loan applicants into python:
 
-
 ```python
-
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
 
@@ -60,10 +58,13 @@ def load_bank_data():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
 
     return load_csv(csvpath)
-    
+ ```   
+
+
 
 B- Users will be prompted to input the applicants financial information:
 
+```python
 
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
@@ -85,10 +86,11 @@ def get_applicant_info():
     home_value = float(home_value)
 
     return credit_score, debt, income, loan_amount, home_value
-
+```
 
 C- Afterwards using a filtering Algorithm to get a list of Bank loans that the loan applicants are qualified for based on their financial informtion and the banks requirements:
 
+```python
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
     """Determine which loans the user qualifies for.
@@ -129,10 +131,12 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     print(f"Found {len(bank_data_filtered)} qualifying loans")
     print(bank_data_filtered)
     return bank_data_filtered
-   
+ ```  
 
  D- Finally the application give the user a choice to save the list of qualifying loans in the "data" directory as the qualifying_loans.csv file:
 
+
+```python
  def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file.
 
@@ -148,15 +152,16 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
         csvpath = questionary.text("Save file by typing this Path: data/qualifying_loans.csv").ask()
         header = ["Lender", "max loan", "max LTV", "Max DTI", "Min Credit", "Interest Rate"]
         save_csv(Path(csvpath), qualifying_loans, header=header)
-    ```
+```
+
 
  Please note, the folders below and their usage:
 
 
-    "data" Folder:
+    > "data" Folder:
     Contains the Bank loan list - "daiily_rate_sheet.csv" and this is where the new qualifying loans csv file will be saved.
 
-    "qualifer" Folder:
+    >"qualifer" Folder:
     -filters - sub folder where the filtering functions are saved for usage in the main app.py file.
     -utils - sub folders where the financial/loan functions are saved for usage in the main app.py file.
 
