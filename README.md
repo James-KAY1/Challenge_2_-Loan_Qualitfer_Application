@@ -15,9 +15,9 @@ The applicable libraries needed to run this application are:
 
 ## Installation Guide
 
-All of the above librabries should be part of the base librabries installed with the version of Python above; if not, you will have to install them through the pip package manager which is the package manager of Python.
+All of the above libraries should be part of the base libraries installed with the version of Python above; if not, you will have to install them through the pip package manager which is the package manager of Python.
 
->Required pip install librabries (versions):
+>Required pip install libraries (versions):
 
 ![<PiP>](./Images/Required%20pip%20install%20Libraries.png)
 
