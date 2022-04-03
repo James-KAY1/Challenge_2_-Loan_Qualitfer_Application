@@ -1,12 +1,13 @@
 # Loan Qualifier Application
 
-This is a command line application that assist users with matching loan applicants with qualifying bank loans. This application was created to streamline the loan qualifying process for user and to save the qualifying loans so that that the results can be shared in a spreadsheet to other users.
+This is a command line application that assist users with matching loan applicants with qualifying bank loans. This application was created to streamline the loan qualifying process for users and to save the qualifying loans generated so that the results can be shared in a spreadsheet to other users.
 
 ---
 
 ## Technologies
 
-The programming language used for this application was **Python v_3.9.7**.
+The programming language used for this application was **Python (v 3.9.7)**.
+
 The applicable libraries needed to run this application are:
 
 ![<Libraries>](./Images/Libraries%20snippit.png)
@@ -15,7 +16,7 @@ The applicable libraries needed to run this application are:
 
 ## Installation Guide
 
-All of the above libraries should be part of the base libraries installed with the version of Python above; if not, you will have to install them through the pip package manager which is the package manager of Python.
+All of the above libraries should be part of the base applications that were installed with the Python version above; if not, you will have to install them through the pip package manager of Python.
 
 >Required pip install libraries (versions):
 
